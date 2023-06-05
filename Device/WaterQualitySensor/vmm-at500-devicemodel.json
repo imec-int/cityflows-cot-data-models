@@ -1,0 +1,70 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:vmm-at500",
+    "type": "DeviceModel",
+    "category": {
+      "type": "StructuredValue",
+      "value": ["sensor"],
+      "metadata": {}
+    },
+    "function": {
+      "type": "StructuredValue",
+      "value": ["sensing"],
+      "metadata": {}
+    },
+	"manufacturerName": {
+      "type": "Text",
+      "value": "Eijkelkamp",
+      "metadata": {}
+    },
+    "brandName": {
+      "type": "Text",
+      "value": "Aqua TROLL",
+      "metadata": {}
+    },
+    "modelName": {
+      "type": "Text",
+      "value": "Aqua TROLL 500",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Aqua TROLL 500 Probe",
+      "metadata": {}
+    },
+    "controlledProperty": {
+      "type": "StructuredValue",
+      "value": [
+        "temperature",
+        "conductivity",
+        "pH",
+        "oxygen",
+        "turbidity",
+        "ammonium",
+        "chloride",
+        "nitrate",
+        "chlorophyll",
+        "bga-pc",
+        "bga-pe",
+        "rhodamine"
+		],
+      "metadata": {}
+    },
+    "supportedUnits": {
+      "type": "StructuredValue",
+      "value": [
+        "CEL",
+        "D10",
+        "Q30",
+        "M1",
+        "M1",
+        "2Z",
+        "M1",
+        "M1",
+        "F23",
+        "F23",
+        "F23",
+        "H29"
+		],
+      "metadata": {}
+    }
+  }

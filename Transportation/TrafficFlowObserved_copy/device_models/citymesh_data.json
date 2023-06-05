@@ -1,0 +1,45 @@
+{
+    "id": "Citymesh-People-counts",
+    "type": "DeviceModel",
+    "controlledProperty": {
+      "type": "StructuredValue",
+      "value": [
+        "occupancy"
+      ],
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Citymesh people counting device",
+      "metadata": {}
+    },
+    "brandName": {
+      "type": "Text",
+      "value": "Citymesh",
+      "metadata": {}
+    },
+    "modelName": {
+      "type": "Text",
+      "value": "People counting device",
+      "metadata": {}
+    },
+    "function": {
+      "type": "StructuredValue",
+      "value": [
+        "sensing"
+      ],
+      "metadata": {}
+    },
+    "category": {
+      "type": "StructuredValue",
+      "value": [
+        "sensor"
+      ],
+      "metadata": {}
+    },
+    "manufacturerName": {
+      "type": "Text",
+      "value": "IMEC CoT",
+      "metadata": {}
+    }
+  }

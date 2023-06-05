@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://github.imec.be/City-of-Things/cot-data-models/Environment/WaterLevelObserved/waterlevelobserved-schema.json",
+    "title": "IMEC CoT - Water level observed schema, compliant with GSMA - FIWARE",
+    "description": "Water Level data model is intended to represent water level parameters at a certain water mass (drainage, sewer, open water, etc.) section",
+    "type": "object",
+    "allOf": [
+      { "$ref": "https://github.imec.be/City-of-Things/cot-data-models/Environment/observations-base-schema.json" },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "WaterLevelObserved"
+            ],
+            "description": "NGSI Entity type"
+          },
+          "waterBody": {
+            "type": "string",
+            "enum": [
+              "OpenWater",
+              "Sewer"
+            ]
+          },
+          "geohash": {
+            "type": "string"
+          },
+          "temperature": {
+            "type": "number"
+          },
+          "waterLevel": {
+            "type": "number",
+            "minimum": 0,
+            "metadata": {
+              "unitCode": "MMT"
+            }
+          },
+          "pressure": {
+              "type": "number",
+              "minimum": 0,
+              "metadata": {
+                "unitCode": "PAL"
+              }
+          },
+          "heightAboveWater": {
+            "type": "number",
+            "minimum": 0,
+            "metadata": {
+              "unitCode": "MMT",
+              "samples": "number",
+              "minimum": 1
+            }
+          },
+          "refPointOfInterest": {
+            "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+          }
+        }
+      }
+    ]
+  }

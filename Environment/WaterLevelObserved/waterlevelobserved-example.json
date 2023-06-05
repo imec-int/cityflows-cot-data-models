@@ -1,0 +1,42 @@
+{
+    "id": "lora.0004A30B001FD07B.2016-11-30T14:45:28Z",
+    "type": "WaterLevelObserved",
+    "refDevice": {
+        "type": "Relationship",
+        "value": "urn:ngsi-v2:be:imec:cot:Device:1"
+    },
+    "refDevices": [
+        {
+            "type": "Relationship",
+            "value": "urn:ngsi-v2:be:imec:cot:Device:1"
+        }, {
+            "type": "Relationship",
+            "value": "urn:ngsi-v2:be:imec:cot:Device:2"
+        }
+    ],
+    "dateObserved": {
+        "type": "DateTime",
+        "value": "2016-11-30T14:45:28Z"
+    },
+    "location": {
+        "value": {
+            "type": "Point",
+            "coordinates": [4.42869404, 51.25484965]
+            }
+    },
+    "waterBody": {
+        "value": "Sewer"
+    },
+    "source": {
+        "value": "cot.flooding"
+    },
+    "waterLevel": {
+        "value": 1416
+    },
+    "temperature": {
+        "value": 10.03125
+    },
+    "pressure": {
+        "value": 0.000579833984375
+    }
+}

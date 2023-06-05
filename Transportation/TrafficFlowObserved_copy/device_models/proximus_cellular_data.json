@@ -1,0 +1,12 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:proximus",
+    "type": "DeviceModel",
+    "controlledProperty": ["occupancy"],
+    "name": "Proximus-people-counts / counting virtual device",
+    "brandName": "Proximus",
+    "modelName":"People counting virtual device",
+    "function":["sensing"],
+    "category":  ["sensor"],
+    "manufacturerName": "IMEC CoT"
+}
+  

@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://cot.imec.be/dataModels/specs/Device/CoT-Device/schema.json",
+  "title": "GSMA / FIWARE - Device schema",
+  "description": "An apparatus (hardware + software + firmware) intended to accomplish a particular task (sensing the environment, actuating, etc.).",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://fiware.github.io/dataModels/specs/Device/device-schema.json#/definitions/Device-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Device"
+          ],
+          "description": "NGSI Entity type"
+        },
+        "controlledAsset": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+              }
+            ]
+          }
+        },
+        "mnc": {
+          "type": "string"
+        },
+        "macAddress": {
+          "type": "array",
+          "items": {
+            "$ref": "https://fiware.github.io/dataModels/specs/Device/device-schema.json#/definitions/MacAddressType"
+          }
+        },
+        "ipAddress": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "oneOf": [
+              {
+                "format": "ipv4"
+              },
+              {
+                "format": "ipv6"
+              }
+            ]
+          }
+        },
+        "alternativeIds": {
+          "type": "array",
+          "description": "A list of (non-NGSI) ids that also uniquely identify this device (e.g. network id’s). This can be used for entity lookup based on messages from a device, since devices are not expected to know (NGSI) ids, but are expected to use some other identifier.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "refParentDevice": {
+          "description": "A relationship pointing to a ‘parent device’. For instance, this could point from the sensor device to sensor box.",
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+            }
+          ]
+        },
+        "locationName": {
+          "type": "string",
+          "description": "The (human readable) name of the location"
+        },
+        "samplingPoint": {
+          "type": "string",
+          "description": "A reference to the exact sampling point"
+        },
+        "extraMeasurementAttributes": {
+          "type": "object",
+          "description": "A map of attributes of the device that should be added to any measurement update related to this device. The key is the attribute name and the value is a boolean.  Values in a child device override those of the parent device."
+        },
+        "configuration": {
+          "type": "object",
+          "description": "Sets expected time between measurements in seconds",
+          "updateFrequency": {
+            "type": "number"
+          }
+        },
+        "dateInstalled": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dateFirstUsed": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dateManufactured": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "hardwareVersion": {
+          "type": "string"
+        },
+        "softwareVersion": {
+          "type": "string"
+        },
+        "firmwareVersion": {
+          "type": "string"
+        },
+        "osVersion": {
+          "type": "string"
+        },
+        "dateLastCalibrated": {
+          "type": "string",
+          "description": "ONLY FOR CALIBRATION DEVICE - Date and time of the last actual software calibration completion.",
+          "format": "date-time"
+        },
+        "dateLastHwCalibration": {
+          "type": "string",
+          "description": "Date and time of the last physical hardware callibration of the device",
+          "format": "date-time"
+        },
+        "serialNumber": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "refDeviceModel": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+            }
+          ]
+        },
+        "batteryLevel": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "adminState": {
+          "type": "string",
+          "description": "administrative details handled by an external tool (eg Antser)",
+          "enum": [
+            "down", "up"
+          ]
+        },
+        "healthState": {
+          "type": "string",
+          "description": "used to signal if the device is working properly",
+          "enum": [
+            "down", "up","faulty"
+          ]
+        },
+        "maxTimebetweenObservations": {
+          "type": "number",
+          "description": "maximum time in seconds between two observations (e.g. timeout) - overrides device model level"
+        },
+        "deviceState": {
+          "type": "string",
+          "description": "deviceState is free text describing the state"
+        },
+        "dateLastValueReported": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "value": {
+          "type": "string"
+        },
+        "geohash": {
+          "type": "string"
+        },
+        "calibrationParameters": {
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "refDeviceModel",
+    "adminState",
+    "healthState"
+  ]
+}

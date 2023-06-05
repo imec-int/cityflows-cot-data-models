@@ -1,0 +1,11 @@
+{
+    "id": "CoT-SpeedRadar-Detector",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "CoT Speed Radar",
+    "brandName": "IMEC CoT",
+    "name": "CoT Hackable City Speed Radar Detector",
+    "manufacturerName": "IMEC CoT",
+    "controlledProperty": ["velocity"]
+}

@@ -1,0 +1,119 @@
+{
+    "id": "urn:ngsi-ld:TrafficFlowObserved:TrafficFlowObserved-Valladolid-osm-60821110",
+    "type": "TrafficFlowObserved",
+    
+    "dateObserved": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2019-06-07T11:10:00Z"
+        }
+    },
+    
+    "dateObservedFrom": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2019-06-07T11:10:00Z"
+        }
+    },
+ 
+    "dateObservedTo": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2019-06-07T11:20:00Z"
+        }
+    },
+
+    "refRoadSegment": {
+        "type": "Relationship",
+        "value": {
+            "@type": "String",
+            "@value": "447743"
+        }
+    },
+ 
+    "intensity": {
+        "type": "Property",
+        "value": 50
+    },
+    
+    "vehicleType": {
+        "type": "Property",
+        "value": "bicycle"
+    },
+ 
+    "direction": {
+        "heading": {
+            "type": "Property",
+            "value": 90
+        },
+        "flow_up": {
+            "type": "Property",
+            "value": 20
+        }
+    },
+ 
+ 
+    "accuracy": {
+        "type": "Property",
+        "value": 0.9
+    },
+ 
+ 
+    "area_covered": {
+            "type": "LineString",
+            "coordinates": [
+            [
+                4.412185549736023,
+                51.21823498913796
+            ],
+            [
+                4.411466717720032,
+                51.218053546941015
+            ],
+            [
+                4.411230683326721,
+                51.218033386652785
+            ],
+            [
+                4.410490393638611,
+                51.218043466797994
+            ],
+            [
+                4.410286545753479,
+                51.218043466797994
+            ]
+        ]
+        
+    },
+ 
+    "address": { 
+        "type": "PostalAddress", 
+        "value": { 
+            "addressLocality": "Antwerpen", 
+            "addressCountry": "BE", 
+            "streetAddress": "Meir" 
+        } 
+    },
+
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+          
+            [
+              4.40740418,
+              51.22243718
+            ]
+          ]
+        }
+    },
+
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}

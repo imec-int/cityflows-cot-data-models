@@ -1,0 +1,15 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:telraam",
+    "type": "DeviceModel",
+    "controlledProperty": [
+        "occupancy",
+        "trafficFlows",
+        "velocity"
+      ],
+    "name": "Telraam measuring device",
+    "brandName": "Transport and Mobility Leuven",
+    "modelName": "Telraam measuring device",
+    "function": "sensing",
+    "category": "sensor",
+    "manufacturerName": "IMEC CoT"
+  }

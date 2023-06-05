@@ -1,0 +1,49 @@
+{
+ 	"id": "DWG-WaterQuality-MP-Probe",
+ 	"type": "DeviceModel",
+ 	"manufacturerName": {
+ 		"type": "String",
+ 		"value": "Xylem",
+ 		"metadata": {}
+ 	},
+ 	"controlledProperty": {
+ 		"type": "StructuredValue",
+ 		"value": [
+ 			"temperature",
+ 			"conductivity",
+ 			"pH",
+			"dissolved_oxygen",
+			"turbidity"
+ 		],
+ 		"metadata": {}
+ 	},
+ 	"function": {
+ 		"type": "StructuredValue",
+ 		"value": [
+ 			"sensing"
+ 		],
+ 		"metadata": {}
+ 	},
+ 	"category": {
+ 		"type": "StructuredValue",
+ 		"value": [
+ 			"sensor"
+ 		],
+ 		"metadata": {}
+ 	},
+ 	"brandName": {
+ 		"type": "String",
+ 		"value": "YSI",
+ 		"metadata": {}
+ 	},
+ 	"modelName": {
+ 		"type": "String",
+ 		"value": "EXO2 Multiparameter sensor",
+ 		"metadata": {}
+ 	},
+ 	"name": {
+ 		"type": "String",
+ 		"value": null,
+ 		"metadata": {}
+ 	}
+ }

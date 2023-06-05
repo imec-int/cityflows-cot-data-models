@@ -1,0 +1,22 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:imec-wqsensor-<type number tbd>",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "iow001",
+    "brandName": "imec",
+    "name": "IMEC WaterQuality sensor",
+    "manufacturerName": "IMEC NL",
+    "controlledProperty": [
+        "temperature",
+        "conductivity",
+        "pH"
+    ],
+    "supportedUnits":  [
+        "CEL",
+        "D10",
+        "Q30"
+    ],
+    "configuration": {},
+    "maxTimebetweenObservationsInSeconds": 0
+}

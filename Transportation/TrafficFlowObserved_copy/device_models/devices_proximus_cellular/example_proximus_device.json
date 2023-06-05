@@ -1,0 +1,14 @@
+{
+    "id": "ngsi-v2:cot-imec-be:device:proximus-250m62362N82735E",
+    "type": ["sensor"],
+    "batteryLevel": -1,
+    "dateFirstUsed": "2019-01-01T00:00:00Z",
+    "refDeviceModel": "urn:ngsi-v2:cot-imec-be:devicemodel:proximus",
+    "controlledProperty": ["occupancy"],
+    "owner": ["imec-cot"],
+    "deviceState": "ok",
+    "location": {
+        "type": "Point",
+        "coordinates": [4.45081322,51.24668869]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "lora.0004A30B0020112D",
+    "type": ["sensor"],
+    "batteryLevel": 0.75,
+    "dateFirstUsed": "2014-09-11T11:00:00Z",
+    "controlledAsset": ["Sewer-id"],
+    "serialNumber": "9845A",
+    "refDeviceModel": "DL-PR26-WaterLevel-sensor",
+    "controlledProperty": ["pressure", "temperature"],
+    "owner": ["imec-cot?"],
+    "deviceState": "ok",
+    "location": {
+        "type": "Point",
+        "coordinates": [4.45081322,51.24668869]
+    },
+    "locationName": "iow-loc-00001-87",
+    "samplingPoint": "iow-spt-00001-84",
+    "geohash": "u155t30vx7nv"
+}

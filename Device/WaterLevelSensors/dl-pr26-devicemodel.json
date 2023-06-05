@@ -1,0 +1,12 @@
+{
+    "id": "DL-PR26-WaterLevel-sensor",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "DL-PR26",
+    "brandName": "Decentlab",
+    "name": "DL-PR26 LoRaWAN Pressure / Depth and Temperature Sensor",
+    "manufacturerName": "Decentlab GmbH",
+    "documentation":"https://cdn.decentlab.com/download/datasheets/Decentlab-DL-PR26-datasheet.pdf",
+    "controlledProperty": ["waterLevel","pressure","temperature"]
+}

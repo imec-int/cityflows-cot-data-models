@@ -1,0 +1,14 @@
+{
+    "type": "Feature",
+    "id": "geohash",
+    "properties": {
+        "geohash": "u155sf8vh"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            4.42869404,
+            51.25484965
+        ]
+    }
+}

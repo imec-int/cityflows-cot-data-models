@@ -1,0 +1,63 @@
+ {
+ 	"id": "WQ-MP-DWG-0001",
+ 	"type": "Device",
+ 	"refDeviceModel": {
+ 		"type": "Relationship",
+ 		"value": "DWG-WaterQuality-MP-Probe",
+ 		"metadata": {}
+ 	},
+ 	"dateLastValueReported": {
+ 		"type": "DateTime",
+ 		"value": "2019-11-13T09:00:00.000Z",
+ 		"metadata": {}
+ 	},
+ 	"category": {
+ 		"type": "StructuredValue",
+ 		"value": [
+ 			"sensor"
+ 		],
+ 		"metadata": {}
+ 	},
+ 	"location": {
+ 		"type": "geo:json",
+ 		"value": {
+ 			"type": "Point",
+ 			"coordinates": [
+				2.8587766,
+				50.9832994
+ 			]
+ 		},
+ 		"metadata": {}
+ 	},
+ 	"dateInstalled": {
+ 		"type": "DateTime",
+ 		"value": "2019-05-24T00:00:00.000Z",
+ 		"metadata": {}
+ 	},
+ 	"controlledProperty": {
+ 		"type": "StructuredValue",
+ 		"value": [
+ 			"temperature",
+ 			"conductivity",
+ 			"pH",
+			"dissolved_oxygen",
+			"turbidity"
+ 		],
+ 		"metadata": {}
+ 	},
+ 	"healthState": {
+ 		"type": "String",
+ 		"value": null,
+ 		"metadata": {}
+ 	},
+ 	"admState": {
+ 		"type": "String",
+ 		"value": null,
+ 		"metadata": {}
+ 	},
+ 	"name": {
+ 		"type": "string",
+ 		"value": "DWG Water Quality MP 0001",
+ 		"metadata": {}
+ 	}
+ }

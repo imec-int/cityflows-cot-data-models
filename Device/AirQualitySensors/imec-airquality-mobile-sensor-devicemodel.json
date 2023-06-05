@@ -1,0 +1,11 @@
+{
+    "id": "IMEC-AirQuality-Mobile-sensor",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "octa",
+    "brandName": "imec",
+    "name": "IMEC AirQuality Mobile sensor",
+    "manufacturerName": "IMEC NL",
+    "controlledProperty": ["temperature","humidity","PM1","PM25","PM10","NO2","O3"]
+}

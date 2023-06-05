@@ -1,0 +1,20 @@
+{
+    "id": "lora.0004A30B001FD07B-2016-11-30T14:45:28Z",
+    "type": "WaterLevelObserved",
+    "refDevice": "urn:ngsi-v2:be:imec:cot:Device:1",
+    "refDevices": [
+        "urn:ngsi-v2:be:imec:cot:Device:1",
+        "urn:ngsi-v2:be:imec:cot:Device:2"
+    ],
+    "dateObserved": "2016-11-30T14:45:28Z",
+    "location": {
+            "type": "Point",
+            "coordinates": [4.42869404, 51.25484965]
+    },
+    "geohash": "u155sf8vh",
+    "waterBody":"Sewer",
+    "source": "cot.flooding",
+    "waterLevel": 1416,
+    "temperature": 10.03125,
+    "pressure": 0.000579833984375
+}

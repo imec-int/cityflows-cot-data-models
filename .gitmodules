@@ -1,0 +1,3 @@
+[submodule "dataModels"]
+	path = dataModels
+	url = https://github.com/FIWARE/dataModels/

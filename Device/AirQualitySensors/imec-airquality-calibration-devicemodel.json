@@ -1,0 +1,11 @@
+{
+    "id": "IMEC-AirQuality-Calibration",
+    "type": "DeviceModel",
+    "category": ["function"],
+    "function": ["calibration"],
+    "modelName": "AQcalibration",
+    "brandName": "imec",
+    "name": "IMEC AirQuality Calibration",
+    "manufacturerName": "IMEC NL",
+    "controlledProperty": ["PM25","PM10","NO2"]
+}

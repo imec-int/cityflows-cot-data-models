@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://github.imec.be/City-of-Things/cot-data-models/Environment/WaterQualityVerified/schema.json",
+    "title": "GSMA / FIWARE - Water quality verified schema",
+    "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
+    "type": "object",
+    "allOf": [
+      { "$ref": "https://github.imec.be/City-of-Things/cot-data-models/Environment/observations-base-schema.json" },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["WaterQualityVerified"],
+            "description": "NGSI Entity type"
+          },
+          "locationName": {
+            "type": "string",
+            "description": "The (human readable) name of the location"
+          },
+          "samplingPoint": {
+            "type": "string",
+            "description": "A reference to the exact sampling point"
+          },
+          "temperature": {
+            "type": "number",
+            "minimum": 0,
+            "metadata": {
+                "timestamp": {
+                  "type": "string"
+                }
+            }
+          },
+          "conductivity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "conductance": {
+            "type": "number",
+            "minimum": 0
+          },
+          "tds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "salinity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "pH": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 14
+          },
+          "orp": {
+            "type": "number",
+            "minimum": 0
+          },
+          "refPointOfInterest": {
+            "$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+          }
+        }
+      }
+    ]
+  }

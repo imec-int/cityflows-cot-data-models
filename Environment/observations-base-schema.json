@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://github.imec.be/City-of-Things/cot-data-models/Environment/observations-base-schema.json",
+    "title": "IMEC CoT - Base schema for CoT stack compatible and GSMA - FIWARE compliant observations",
+    "description": "This schema describes the basic fields that can be used for all type of observations and include fields that are needed for certain functionality in Imecs CoT stack.",
+    "type": "object",
+    "allOf": [
+      {"$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"},
+      {"$ref": "https://fiware.github.io/data-models/common-schema.json#/definitions/Location-Commons"},
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "NGSI Entity type",
+            "enum": [
+              "WaterLevelObserved",
+              "EMFObserved",
+              "AirQualityObserved",
+              "WaterQualityObserved",
+              "WaterQualityVerified"
+            ]
+          },
+          "refDevice": {
+            "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+          },
+          "dateObserved": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "refDevices": {
+            "type": "array",
+            "description": "A list of all associated devices. This is the sensor itself (also in `refDevice`) and optional parent devices.",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+                }
+              ]
+            }
+          },
+          "reliability": {
+            "type": "number",
+            "description": "An indication of the reliability of the observation. 0 indicates 'not reliable', 1 indicates 'reliable'. Alternatively, any value between 0 and 1 can be used to incidate a more qualitative estimation of how reliable the data is. Metadata of this field can be used to track underlying parameters to the reliability estimation."
+          }
+        }
+      }
+    ],
+    "required": [
+        "id",
+        "type",
+        "refDevice",
+        "dateObserved",
+        "location"
+    ]
+  }

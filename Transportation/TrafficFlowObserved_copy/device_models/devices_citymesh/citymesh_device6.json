@@ -1,0 +1,17 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:device:citymesh-fabd940c6707c705eddf7775e443d18c",
+    "type": ["sensor"],
+    "batteryLevel": -1,
+    "dateFirstUsed": "2020-01-01T00:00:00Z",
+    "refDeviceModel": "citymesh-people-counts-virtual-sensor",
+    "controlledProperty": ["occupancy"],
+    "owner": ["imec-cot"],
+    "deviceState": "ok",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            4.395943,
+            51.211224
+          ]
+    }
+}

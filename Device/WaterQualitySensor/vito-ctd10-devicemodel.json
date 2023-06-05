@@ -1,0 +1,52 @@
+{
+    "id": "urn:ngsi-v2:vito-be:devicemodel:vito-decagon-ctd10",
+    "type": "DeviceModel",
+    "category": {
+      "type": "StructuredValue",
+      "value": ["sensor"],
+      "metadata": {}
+    },
+    "function": {
+      "type": "StructuredValue",
+      "value": ["sensing"],
+      "metadata": {}
+    },
+	"manufacturerName": {
+      "type": "Text",
+      "value": "METER Group",
+      "metadata": {}
+    },
+    "brandName": {
+      "type": "Text",
+      "value": "decagon",
+      "metadata": {}
+    },
+    "modelName": {
+      "type": "Text",
+      "value": "CTD-10",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "CTD-10 Probe",
+      "metadata": {}
+    },
+    "controlledProperty": {
+      "type": "StructuredValue",
+      "value": [
+        "temperature",
+        "conductivity",
+        "depth"
+		],
+      "metadata": {}
+    },
+    "supportedUnits": {
+      "type": "StructuredValue",
+      "value": [
+        "CEL",
+        "G42",
+        "MMT"
+ 		],
+      "metadata": {}
+    }
+  }

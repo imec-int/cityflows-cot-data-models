@@ -1,0 +1,11 @@
+{
+    "id": "VMM-AirQuality-sensor",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "VMM",
+    "brandName": "VMM",
+    "name": "VMM AirQuality Reference Sensor",
+    "manufacturerName": "VMM",
+    "controlledProperty": ["PM10","NO2"]
+}

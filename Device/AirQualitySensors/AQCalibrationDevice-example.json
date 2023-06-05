@@ -1,0 +1,41 @@
+{
+    "id": "AQCalibration.0004A30B0020112D",
+    "type": "AirQualityCalibrationDevice",
+    "dateFirstUsed": "2019-09-11T11:00:00Z",
+    "controlledAsset": ["lora.0004A30B0020112D"],
+    "refDeviceModel": "IMEC-AirQuality-Calibration",
+    "controlledProperty": ["PM25,PM10,NO2"],
+    "dateLastCalibration": "2019-09-12T11:00:00Z",
+    "owner": ["imec"],
+    "adminState":"up",
+    "healthState": "up",
+    "deviceState": "ok",
+    "calibrationParameters": [
+        {
+            "measurand": "PM10",
+            "values": [
+                ["alpha_temp1", 0]
+                ["alpha_temp0", 1.4748245749299949],
+                ["alpha_hum1", 0],
+                ["alpha_hum0", 0.4274332746019941],
+                ["beta_raw", -45.12147488204749],
+                ["alpha_lin_raw", 3.299582829185965e-13],
+                ["alpha_log_raw", 10.083159838834138]
+            ]
+        },
+        {
+            "measurand": "NO2",
+            "values": [
+                ["alpha_temp2", 0],
+                ["alpha_temp1", 0],
+                ["alpha_temp0", 0.4173273165306822],
+                ["alpha_hum2", 0],
+                ["alpha_hum1", 1.1447191135266566],
+                ["alpha_hum0", -1.394444277509778],
+                ["beta_raw", -1.4032166366600107],
+                ["alpha_raw", 0.6594466427579307]
+            ]
+        } 
+    ]
+}
+

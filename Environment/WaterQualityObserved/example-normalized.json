@@ -1,0 +1,94 @@
+{
+    "id": "urn:ngsi-ld:WaterQualityObserved:1",
+    "type": "WaterQualityObserved",
+    "refDevice": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:Device:1"
+    },
+    "refDevices": [
+        {
+            "type": "Relationship",
+            "value": "urn:ngsi-ld:Device:1"
+        }
+    ],
+    "dateObserved": {
+        "type": "DateTime",
+        "value":  "2019-10-31T08:45:00+00:00"
+    },
+    "dataProvider": {
+        "value":  "VMM"
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+          "type": "Point",
+          "coordinates": [51.0577, 4.1499]
+        }
+    },
+    "locationName": {
+        "value": "iow-loc-00001-87"
+    },
+    "samplingPoint": {
+        "value": "iow-spt-00001-84"
+    },
+    "temperature": {
+        "value": 24.4,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00+00:00"
+            },
+            "unitCode": {
+                "value": "CEL"
+            },
+            "rawValue": {
+                "value": 155
+            },
+            "rawValueUnitCode": {
+                "value": "CEL"
+            },
+            "statusCode": {
+                "value": 1
+            }
+        }
+    },
+    "conductivity": {
+        "value": 0.005,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00+00:00"
+            },
+            "rawValue": {
+                "value": 3
+            },
+            "rawValueUnitCode": {
+                "value": "OHM"
+            },
+            "unitCode": {
+                "value": "D10"
+            },
+            "statusCode": {
+                "value": 0
+            },
+            "phase": {
+                "value": -0.1
+            }
+        }
+    },
+    "pH": {
+        "value": 7.4,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00+00:00"
+            },
+            "rawValue": {
+                "value": 88
+            },
+            "rawValueUnitCode": {
+                "value": "VLT"
+            },
+            "statusCode": {
+                "value": 1
+            }
+        }
+    }
+  }

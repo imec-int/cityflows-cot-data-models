@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://github.imec.be/City-of-Things/cot-data-models/Environment/WaterQualityObserved/schema.json",
+    "title": "GSMA / FIWARE - Water quality observed schema",
+    "description": "Water Quality data model is intended to represent water quality parameters at a certain water mass (river,  lake, sea, etc.) section",
+    "type": "object",
+    "allOf": [
+      { "$ref": "https://github.imec.be/City-of-Things/cot-data-models/Environment/observations-base-schema.json" },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["WaterQualityObserved"],
+            "description": "NGSI Entity type"
+          },
+          "dateLastHwCallibration": {
+            "type": "string"
+          },
+          "octa_state": {
+            "type": "number"
+          },
+          "sensor_state": {
+            "type": "number"
+          },
+          "locationName": {
+            "type": "string",
+            "description": "The (human readable) name of the location"
+          },
+          "samplingPoint": {
+            "type": "string",
+            "description": "A reference to the exact sampling point"
+          },
+          "batteryLevel": {
+            "type": "number"
+          },
+          "deviceHumidity": {
+            "type": "number"
+          },
+          "deviceTemperature": {
+            "type": "number"
+          },
+          "temperature": {
+            "type": "number"
+          },
+          "conductivity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "conductance": {
+            "type": "number",
+            "minimum": 0
+          },
+          "pH": {
+            "type": "number"
+          },
+          "tds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "salinity": {
+            "type": "number",
+            "minimum": 0
+          },
+          "orp": {
+            "type": "number",
+            "minimum": 0
+          },
+          "turbidity": {
+            "type": "number"
+          },
+          "NH4": {
+            "type": "number",
+            "$comment": "Ammonium",
+            "minimum": 0
+          },
+          "NH3": {
+            "type": "number",
+            "$comment": "Ammonia",
+            "minimum": 0
+          },
+          "Cl-": {
+            "type": "number",
+            "$comment": "Chlorides",
+            "minimum": 0
+          },
+          "NO3": {
+            "type": "number",
+            "$comment": "Nitrates",
+            "minimum": 0
+          },
+          "Chla": {
+            "type": "number",
+            "$comment": "Chlorophyll A",
+            "minimum": 0
+          },
+          "bga": {
+            "type": "number",
+            "minimum": 0
+          },
+          "O2": {
+            "type": "number",
+            "minimum": 0
+          },
+          "ssg": {
+            "type": "number",
+            "minimum": 0
+          },
+          "rhodamine": {
+            "type": "number",
+            "minimum": 0
+          },
+          "depth": {
+            "type": "number"
+          },
+          "calcium": {
+            "type": "number",
+            "minimum": 0
+          },
+          "fluorescense": {
+            "type": "number"
+          },
+          "cdom": {
+            "type": "number",
+            "minimum": 0
+          },
+          "fdom": {
+            "type": "number",
+            "minimum": 0
+          },
+          "waterLevel": {
+            "type": "number",
+            "minimum": 0
+          },
+          "atmosphericPressure": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    ]
+  }

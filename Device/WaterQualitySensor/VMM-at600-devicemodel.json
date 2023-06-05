@@ -1,0 +1,74 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:vmm-at600",
+    "type": "DeviceModel",
+    "category": {
+      "type": "StructuredValue",
+      "value": ["sensor"],
+      "metadata": {}
+    },
+    "function": {
+      "type": "StructuredValue",
+      "value": ["sensing"],
+      "metadata": {}
+    },
+                "manufacturerName": {
+      "type": "Text",
+      "value": "IN-SITU",
+      "metadata": {}
+    },
+    "brandName": {
+      "type": "Text",
+      "value": "Aqua TROLL",
+      "metadata": {}
+    },
+    "modelName": {
+      "type": "Text",
+      "value": "Aqua TROLL 600",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "Aqua TROLL 600 Multiparameter Sonde",
+      "metadata": {}
+    },
+    "controlledProperty": {
+      "type": "StructuredValue",
+      "value": [
+        "pH",
+        "ORP",
+        "temperature",
+        "actual conductivity",
+        "specific conductivity",
+        "salinity",
+        "total dissolved solids",
+        "O2",
+        "O2saturation",
+        "turbidity",
+        "total suspended solids", 
+        "Barometer_mBar",
+        "Battery voltage",
+        "Water level"
+                                    ],
+      "metadata": {}
+    },
+    "supportedUnits": {
+      "type": "StructuredValue",
+      "value": [
+        "Q30",
+        "2Z",
+        "CEL",
+        "G42",
+        "G42",
+        "H64",
+        "M1",
+        "M1",
+        "P1",
+        "other:NTU",
+        "M1",
+        "MBR",
+        "VLT",
+        "CMT"   
+                             ],
+      "metadata": {}
+    }
+  }

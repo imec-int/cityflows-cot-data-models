@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "id": "https://github.imec.be/City-of-Things/cot-data-models/Environment/EMFObserved/emf-observed-schema.json",
+    "title": "IMEC CoT - EMF observed schema, compliant with GSMA - FIWARE",
+    "description": "EMF data model is intended to represent EMF parameters at a specific location",
+    "type": "object",
+    "allOf": [
+      { "$ref": "https://github.imec.be/City-of-Things/cot-data-models/Environment/observations-base-schema.json" },
+      {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "EMFObserved"
+            ],
+            "description": "NGSI Entity type"
+          },
+          "frequency": {
+            "type": "number",
+            "metadata": {
+              "unitCode": "MHZ"
+            }
+          },
+          "min": {
+            "type": "number",
+            "metadata": {
+              "unitCode": "D50"
+            }
+          },
+          "avg": {
+            "type": "number",
+            "metadata": {
+              "unitCode": "D50"
+            }
+          },
+          "max": {
+            "type": "number",
+            "metadata": {
+              "unitCode": "D50"
+            }
+          },
+          "geohash": {
+            "type": "string"
+          },
+          "refPointOfInterest": {
+            "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/EntityIdentifierType"
+          }
+        }
+      }
+    ]
+  }

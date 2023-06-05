@@ -1,0 +1,11 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:citymesh-people-counts-virtual-device",
+    "type": "DeviceModel",
+    "controlledProperty": "occupancy",
+    "name": "Citymesh people counting device",
+    "brandName": "Citymesh",
+    "modelName": "People counting device",
+    "function": "sensing",
+    "category": "sensor",
+    "manufacturerName": "IMEC CoT"
+  }

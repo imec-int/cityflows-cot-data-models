@@ -1,0 +1,11 @@
+{
+    "id": "WAVES-ElectricField-Mobile-sensor",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "WAVES-MOBILE-EMV node v1",
+    "brandName": "imec-WAVES",
+    "name": "IMEC RMS Electric Field Mobile sensor",
+    "manufacturerName": "IMEC-WAVES",
+    "controlledProperty": ["E_RMS_900MHz"," E_RMS_1800MHz "," E_RMS_2100MHz"," E_RMS_2400MHz"]
+}

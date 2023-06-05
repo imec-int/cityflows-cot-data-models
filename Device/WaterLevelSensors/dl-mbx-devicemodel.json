@@ -1,0 +1,12 @@
+{
+    "id": "DL-MBX-WaterLevel-sensor",
+    "type": "DeviceModel",
+    "category": ["sensor"],
+    "function": ["sensing"],
+    "modelName": "DL-MBX ",
+    "brandName": "Decentlab",
+    "name": "DL-MBX LoRaWAN Rangefinder / Level Sensor",
+    "manufacturerName": "Decentlab GmbH",
+    "documentation": "https://cdn.decentlab.com/download/datasheets/Decentlab-DL-MBX-datasheet.pdf",
+    "controlledProperty": ["waterLevel","depth"]
+}

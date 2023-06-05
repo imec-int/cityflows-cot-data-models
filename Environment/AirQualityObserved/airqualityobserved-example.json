@@ -1,0 +1,30 @@
+{
+  "id": "lora.3432333849378418",
+  "type": "AirQualityObserved",
+  "refDevice": "urn:ngsi-v2:be:imec:cot:Device:1",
+  "refDevices": [
+      "urn:ngsi-v2:be:imec:cot:Device:1",
+      "urn:ngsi-v2:be:imec:cot:Device:2"
+  ],
+  "dateObserved": "2019-03-27T10:22:04",
+  "location": {
+    "type": "Point",
+    "coordinates": [4.39751571, 51.21726989],
+  },
+  "source": "cot.dencity",
+  "relativeHumidity": 0.5834961,
+  "temperature": 14.5047,
+  "NO2": 99.41021,
+  "O3": 39211,
+  "PM1": 5.748854,
+  "PM10": 12.237801,
+  "PM25": 8.782126,
+  "metadata":{
+    "NO2": 99.41021,
+    "O3": 39211,
+    "PM1": 5.748854,
+    "PM10": 12.237801,
+    "PM25": 8.782126
+  },
+  "geohash": "u155k5f4jx17"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "Tipping-Bucket-Rain-Gauge",
+    "type": "DeviceModel",
+    "category":["sensor"],
+    "function":["sensing"],
+    "modelName": "Tipping Bucket Rain Gauge",
+    "brandName": "Decentlab",
+    "name": "Tipping Bucket Rain Gauge",
+    "manufacturerName": "Decentlab GmbH",
+    "documentation": "https://www.decentlab.com/products/tipping-bucket-rain-gauge-for-lorawan",
+    "controlledProperty": ["precipitation"]
+}

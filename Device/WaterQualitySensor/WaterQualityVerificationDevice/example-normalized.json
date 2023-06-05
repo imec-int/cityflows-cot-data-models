@@ -1,0 +1,176 @@
+{
+    "id": "urn:ngsi-v2:be:vito:iow:WaterQualityVerificationDevice:1",
+    "type": "WaterQualityVerificationDevice",
+    "controlledAsset" : 
+    {
+        "type": "Relationship",
+        "value": "urn:ngsi-v2:be:imec:cot:WaterQualityDevice:1"
+    },
+    "controlledProperty": {
+        "value": ["pH", "temperature", "conductivity"]
+    },    
+    "source": {        
+        "value": "WaterQualityCalibrated"
+    }, 
+    "refDevice": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:WaterQualityDevice:1"
+    },
+    "category": {
+        "value": ["implement"]
+    },
+    "ipAddress": {
+        "value": ["192.14.56.78"]
+    },
+    "configuration": {
+        "type": "StructuredValue",
+        "value": {
+            "flag_min_max": {
+                "type": "StructuredValue",
+                "value": {
+                    "minimum": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": -5                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 200                                
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 4                                
+                            }
+                        }
+                    },
+                    "maximum": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": 25                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 2500                                
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 8.5                               
+                            }
+                        }
+                    }
+                }
+            },
+            "flag_jump": {
+                "type": "StructuredValue",
+                "value": {
+                    "jump_limit": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": 3                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 150                                
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 0.5                               
+                            }
+                        }
+                    }
+                }
+            },
+            "flag_stationary": {
+                "type": "StructuredValue",
+                "value": {
+                    "tolerance": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": 0.05                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 10                                
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 0.02                               
+                            }
+                        }
+                    },
+                    "duration": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": 10                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 3                                
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 2                                
+                            }
+                        },
+                        "metadata": {
+                            "unit": "HUR"
+                        }
+                    }
+                }
+            },
+            "flag_zscore": {
+                "type": "StructuredValue",
+                "value": {
+                    "zscore": {
+                        "type": "StructuredValue",
+                        "value": {
+                            "temperature" : {
+                                "type": "Number",
+                                "value": 3                                
+                            },
+                            "conductivity" : {
+                                "type": "Number",
+                                "value": 3
+                            },
+                            "pH" : {
+                                "type": "Number",
+                                "value": 3                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dateFirstUsed": {
+        "type": "DateTime",
+        "value": "2014-09-11T11:00:00Z"
+    },
+    "softwareVersion": {
+        "value": "https://github.com/iow/dataquality/releases/tag/v0.3.1"
+    },
+    "provider": {
+        "value": "VITO"
+    },
+    "refDeviceModel": {
+        "type": "Relationship",
+        "value": "myDevice-wastecontainer-sensor-345"
+    },
+    "deviceState": {
+        "value": "ok"
+    },
+    "dateLastValueReported": {
+        "type": "DateTime",
+        "value": "2018-09-11T11:00:00Z"
+    }
+}

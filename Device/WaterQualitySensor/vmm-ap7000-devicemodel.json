@@ -1,0 +1,94 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:devicemodel:vmm-ap7000",
+    "type": "DeviceModel",
+    "category": {
+      "type": "StructuredValue",
+      "value": ["sensor"],
+      "metadata": {}
+    },
+    "function": {
+      "type": "StructuredValue",
+      "value": ["sensing"],
+      "metadata": {}
+    },
+	"manufacturerName": {
+      "type": "Text",
+      "value": "Eijkelkamp",
+      "metadata": {}
+    },
+    "brandName": {
+      "type": "Text",
+      "value": "Eijkelkamp AP",
+      "metadata": {}
+    },
+    "modelName": {
+      "type": "Text",
+      "value": "AP 7000",
+      "metadata": {}
+    },
+    "name": {
+      "type": "Text",
+      "value": "AP 7000 Probe",
+      "metadata": {}
+    },
+    "controlledProperty": {
+      "type": "StructuredValue",
+      "value": [
+        "pH",
+        "orp",
+        "oxygen",
+        "conductivity",
+
+        "salinity",
+        "conductance",
+        "tds",
+        "ssg",
+
+        "temperature",
+        "ammonium",
+        "turbidity",
+        "rhodamine",
+
+        "calcium",
+        "chlorophyll",
+        "fluorescense",
+        "chloride",
+
+        "nitrate",
+        "bga",
+        "cdom",
+        "fdom"
+		],
+      "metadata": {}
+    },
+    "supportedUnits": {
+      "type": "StructuredValue",
+      "value": [
+        "Q30",
+        "2Z",
+        "M1",
+        "D10",
+        
+        "M1",
+        "SIE",
+        "M1",
+        "KMQ",
+        
+        "CEL",
+        "F23",
+        "",
+        "H29",
+        
+        "M1",
+        "F23",
+        "",
+        "M1",
+        
+        "M1",
+        "F23",
+        "H29",
+        "H29"
+		],
+      "metadata": {}
+    }
+  }

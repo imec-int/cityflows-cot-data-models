@@ -1,0 +1,18 @@
+{
+    "id": "urn:ngsi-v2:cot-imec-be:device:telraam-504407",
+    "type": ["sensor"],
+    "batteryLevel": -1,
+    "dateFirstUsed": "2019-01-01T00:00:00Z",
+    "refDeviceModel": "urn:ngsi-v2:cot-imec-be:devicemodel:telraam",
+    "controlledProperty": [
+        "occupancy",
+        "trafficFlows",
+        "velocity"
+    ],
+    "owner": ["imec-cot"],
+    "deviceState": "ok",
+    "location": {
+        "type": "Point",
+        "coordinates": [4.45081322,51.24668869]
+    }
+}

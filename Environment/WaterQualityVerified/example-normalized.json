@@ -1,0 +1,118 @@
+{
+    "id": "urn:ngsi-v2:be:imec:cot:WaterQualityVerified:1",
+    "type": "WaterQualityVerified",
+    "refDevice": {
+        "type": "Relationship",
+        "value": "urn:ngsi-v2:be:imec:cot:Device:1"
+    },
+    "refDevices": [
+        {
+            "type": "Relationship",
+            "value": "urn:ngsi-v2:be:imec:cot:Device:1"
+        }, {
+            "type": "Relationship",
+            "value": "urn:ngsi-v2:be:imec:cot:Device:2"
+        }
+    ],
+    "dateObserved": {
+        "type": "DateTime",
+        "value":  "2019-10-31T08:45:00Z"
+    },
+    "dataProvider": {
+        "value":  "VMM"
+    },
+    "location": {
+        "type": "geo:json",
+        "value": {
+          "type": "Point",
+          "coordinates": [51.0577, 4.1499]
+        }
+    },
+    "locationName": {
+        "value": "iow-loc-00001-87"
+    },
+    "samplingPoint": {
+        "value": "iow-spt-00001-84"
+    },
+    "temperature": {
+        "value": 24.4,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00Z"
+            },
+            "rawValue": {
+                "value": "55.63"
+            },
+            "statusCode": {
+                "value": 1
+            },
+            "flag_minmax": {
+                "value": 1
+            },
+            "flag_zscore": {
+                "value": 1
+            },
+            "flag_flatline": {
+                "value": 1
+            },
+            "flag_slope": {
+                "value": -1
+            }
+        }
+    },
+    "conductivity": {
+        "value": 0.005,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00Z"
+            },
+            "rawValue": {
+                "value": 3
+            },
+            "unitCode": {
+                "value": "D10"
+            },
+            "statusCode": {
+                "value": 0
+            },
+            "phase": {
+                "value": -0.1
+            },
+            "flag_minmax": {
+                "value": "True"
+            },
+            "flag_zscore": {
+                "value": "True"
+            },
+            "flag_jump": {
+                "value": "False"
+            },
+            "flag_stationary": {
+                "value": "False"
+            }
+        }
+    },
+    "pH": {
+        "value": 7.4,
+        "metadata": {
+            "timestamp": {
+                "value": "2019-10-31T08:45:00Z"
+            },
+            "rawValue": {
+                "value": "5.8"
+            },
+            "flag_minmax": {
+                "value": "True"
+            },
+            "flag_zscore": {
+                "value": "True"
+            },
+            "flag_jump": {
+                "value": "True"
+            },
+            "flag_stationary": {
+                "value": "False"
+            }
+        }
+    }
+  }

@@ -1,0 +1,14 @@
+{
+    "id": "anthony.01.speed",
+    "type": "SpeedDetected",
+    "velocity": 12.345,
+    "dateObserved": "2019-04-25T12:59:55.00Z",
+    "refDevice": "anthony.01",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            4.430006,
+            51.21841
+            ]
+    }
+}
